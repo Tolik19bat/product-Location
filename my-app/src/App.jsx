@@ -1,5 +1,6 @@
 //App.jsx
 
+import './fonts.css/OpenSans-Bold.woff'
 import './App.css'
 import Store from './components/Store';
 import products from './data.js';

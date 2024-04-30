@@ -1,13 +1,13 @@
 // ListView.jsx
 
 import PropTypes from 'prop-types';
-import ShopItem from './ShopItem';
+import ListShopItem from './ListShopItem';
 
 const ListView = ({ items }) => {
     return (
         <div className="list-view">
             {items.map((product, index) => (
-                <ShopItem key={index} product={product} />
+                <ListShopItem key={index} product={product} />
             ))}
         </div>
     );

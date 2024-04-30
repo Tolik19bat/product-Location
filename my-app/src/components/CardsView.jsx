@@ -1,14 +1,13 @@
 // CardsView.jsx
 
-import ShopItem from './ShopItem';
+import CardsShopItem from './CardsShopItem';
 import PropTypes from 'prop-types';
-// import { v4 as uuidv4 } from 'uuid';
 
 const CardsView = ({ cards }) => {
   return (
     <div className="cards-view">
       {cards.map((product, index) => (
-        <ShopItem key={index} product={product} />
+        <CardsShopItem key={index} product={product} />
       ))}
     </div>
   );

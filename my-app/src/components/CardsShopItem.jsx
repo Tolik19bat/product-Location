@@ -1,22 +1,23 @@
-// ShopItem.jsx
 
-// ShopItem.jsx
+// CardsShopItem.jsx
 
 import PropTypes from 'prop-types';
 
-const ShopItem = ({ product }) => {
+const CardsShopItem = ({ product }) => {
   return (
     <div className="shop-item">
-      <img src={product.img} alt={product.name} />
       <h3>{product.name}</h3>
-      <p>Color: {product.color}</p>
-      <p>Price: ${product.price}</p>
-      <button>Add to Cart</button>
+      <p>{product.color}</p>
+      <img src={product.img} alt={product.name} />
+      <div className="element">
+        <p>${product.price}</p>
+        <button>Add to Cart</button>
+      </div>
     </div>
   );
 };
 
-ShopItem.propTypes = {
+CardsShopItem.propTypes = {
   product: PropTypes.shape({
     name: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
@@ -25,7 +26,7 @@ ShopItem.propTypes = {
   }).isRequired
 };
 
-export default ShopItem;
+export default CardsShopItem;
 // Объяснение:
 // - Компонент `ShopItem` получает свойство `product`, содержащее информацию об одном товаре.
 // - Отображает изображение, название, цвет и цену продукта.

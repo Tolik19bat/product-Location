@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Open Sans Bold';
+    /* Имя шрифта для использования в CSS */
+    src: url('./fonts.css/OpenSans-Bold.woff');
+    /* Путь к файлу шрифта */
+}
+body {
+    font-family: 'open sans bold';
+    font-weight: 700;
+    font-style: normal;
+}
+.store {
+    width: 95%;
+    margin: auto;
+}
+
+.icon-switch {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Общие стили для карточки товара */
+.cards-view .shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 29rem;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fffafa;
+}
+
+/* Тени карточки товара */
+.shop-item {
+    box-shadow: 0px 14px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для изображения товара */
+.shop-card img,
+.shop-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для названия товара */
+.shop-card h3,
+.shop-item h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Стили для цвета товара */
+.shop-card p:first-child,
+.shop-item p:first-child {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Стили для цены товара */
+.shop-card p:last-child,
+.shop-item p:last-child {
+    margin: 5px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Стили для кнопки "Добавить в корзину" */
+.shop-card button,
+.shop-item button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008CBA;
+    /* Blue color */
+    color: white;
+    cursor: pointer;
+}
+
+/* Стили для кнопки при наведении */
+.shop-card button:hover,
+.shop-item button:hover {
+    background-color: #007B9A;
+    /* Darker blue color */
+}
+
+/* Стили для отображения товаров в виде списка */
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для отображения товаров в виде карточек */
+.cards-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
