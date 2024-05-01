@@ -1,15 +1,17 @@
 
-// ListShopItem.jsx Это отображение карточек в строку
+// ListShopItem.jsx 
+// Это шаблон для отображение
+// товаров в виде списка
 
 import PropTypes from 'prop-types';
 
 const ListShopItem = ({ product }) => {
   return (
     <div className="shop-item">
+    <img src={product.img} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.color}</p>
-      <img src={product.img} alt={product.name} />
-      <p>${product.price}</p>
+      <p className='price'>${product.price}</p>
       <button>Add to Cart</button>
     </div>
   );

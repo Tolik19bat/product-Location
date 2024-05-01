@@ -1,26 +1,33 @@
 @font-face {
-    font-family: 'Open Sans Bold';
-    /* Имя шрифта для использования в CSS */
+    font-family: 'open sans bold';
     src: url('./fonts.css/OpenSans-Bold.woff');
-    /* Путь к файлу шрифта */
 }
+
 body {
     font-family: 'open sans bold';
     font-weight: 700;
     font-style: normal;
 }
+
+/* Контейнер */
 .store {
-    width: 95%;
+    width: 110rem;
     margin: auto;
 }
 
+/* Иконка */
 .icon-switch {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    padding: 10px;
+    padding: 30px;
 }
 
-/* Общие стили для карточки товара */
+.material-icons {
+    font-size: 3rem;
+}
+
+/* Стили для карточки товара */
 .cards-view .shop-item {
     display: flex;
     flex-direction: column;
@@ -34,60 +41,72 @@ body {
 }
 
 /* Тени карточки товара */
-.shop-item {
+.cards-view .shop-item {
     box-shadow: 0px 14px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Стили для изображения товара */
-.shop-card img,
-.shop-item img {
+.cards-view .shop-item img {
     width: 100%;
     height: auto;
 }
 
 /* Стили для названия товара */
-.shop-card h3,
 .shop-item h3 {
     margin: 10px 0;
     color: #333;
-    font-size: 18px;
-}
-
-/* Стили для цвета товара */
-.shop-card p:first-child,
-.shop-item p:first-child {
-    margin: 5px 0;
-    color: #666;
-    font-size: 16px;
-}
-
-/* Стили для цены товара */
-.shop-card p:last-child,
-.shop-item p:last-child {
-    margin: 5px 0;
-    color: #000;
-    font-size: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
-/* Стили для кнопки "Добавить в корзину" */
-.shop-card button,
-.shop-item button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #008CBA;
-    /* Blue color */
-    color: white;
-    cursor: pointer;
+.cards-view .shop-item p {
+    font-size: 1.5rem;
 }
 
-/* Стили для кнопки при наведении */
-.shop-card button:hover,
-.shop-item button:hover {
-    background-color: #007B9A;
-    /* Darker blue color */
+.cards-view .shop-item .element {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cards-view .shop-item .element p {
+    color: red;
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+button:hover {
+    color: white;
+    background-color: red;
+}
+
+.list-view .shop-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-view .shop-item img {
+    width: 10rem;
+}
+
+.list-view .shop-item p {
+    font-size: 1.5rem;
+}
+
+.list-view .shop-item .price {
+    color: red;
 }
 
 /* Стили для отображения товаров в виде списка */
@@ -100,5 +119,5 @@ body {
 .cards-view {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }

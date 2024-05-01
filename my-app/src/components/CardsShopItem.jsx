@@ -1,5 +1,7 @@
 
 // CardsShopItem.jsx
+// Это шаблон для отображение
+// товаров в виде карточек
 
 import PropTypes from 'prop-types';
 
