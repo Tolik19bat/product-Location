@@ -17,10 +17,13 @@ body {
 
 /* Иконка */
 .icon-switch {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    width: 3rem;
     padding: 30px;
+    left: 107rem;
+    position: relative;
+
 }
 
 .material-icons {
